@@ -1,0 +1,133 @@
+header{
+	position: relative;
+	z-index: 3;
+	padding: 1.5rem 3rem;
+	background: rgba(0, 0, 0, 0.5);
+.top-menu{
+	display: none;
+	border-top: none;
+ul{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+li a{
+	padding: 2rem 3rem;
+	font-size: 2.5rem;
+&:hover{
+	color: #ee5022;
+}
+}
+}
+}
+.mobail-menu{
+	position: absolute;
+	display: block;
+    border-bottom: 1.2rem double #fff;
+    border-top: 0.4rem solid #fff;
+    cursor: pointer;
+    padding-top: 0.4rem;
+    width: 3rem;
+    right: 2rem;
+    top: 2.5rem;
+    z-index: 9;
+
+}
+.mobail-menu-close{
+	display: none;
+	position: absolute;
+	width: 3.4rem;
+	height: 3rem;
+	right: 2rem;
+	top: 2rem;
+	z-index: 9;
+
+&:before, &:after {
+	position: absolute;
+	left: 1.5rem;
+	content: "";
+	height: 3rem;
+	width: 0.4rem;
+	background-color: #fff;
+}
+&:before {
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+&:after {
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+}
+.responsive{
+	position: absolute;
+	display: block;
+	width: 30%;
+	right: 0;
+	background: rgba(0, 0, 0, 0.9);
+	padding-bottom: 2.4rem;
+	z-index: 8;
+	-webkit-animation: navmenumobile 0.4s ease-out;
+		        animation: navmenumobile 0.4s ease-out;
+	
+}
+@-webkit-keyframes navmenumobile{
+	0%{
+		-webkit-transform: translate(100%, 0);
+		        transform: translate(100%, 0);
+	}
+	100%{
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+}
+@keyframes navmenumobile{
+	0%{
+		-webkit-transform: translate(100%, 0);
+		        transform: translate(100%, 0);
+	}
+	100%{
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+}
+
+.mobmenu-close-block{
+	display: block;
+	z-index: 99;
+	cursor: pointer;
+}
+.mobail-menuopen{
+	display: none;
+}
+}
+.wrapper-window{
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+.wrapper-window-bg {
+    display: block;
+}
+@media screen and (max-width: 1200px){
+header .responsive{
+	width: 50%;
+	text-align: center;
+}
+}
+@media screen and (max-width: 768px){
+header{
+.responsive{
+	width: 100%;
+}
+.top-menu ul li a{
+	font-size: 2rem;
+}
+}
+}

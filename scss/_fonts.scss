@@ -1,0 +1,85 @@
+@font-face {font-family: "HelveticaNeueBold";
+    font-display: swap;
+    src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+    src: url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {font-family: "HelveticaNeue-Light";
+    font-display: swap;
+    src: url("../fonts/HelveticaNeue-Light.woff2") format("woff2");
+    src: url("../fonts/HelveticaNeue-Light.woff") format("woff"),
+    url("../fonts/HelveticaNeue-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {font-family: "TahomaRegular";
+    src: url("../fonts/TahomaRegular.eot");
+    src: url("../fonts/TahomaRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TahomaRegular.woff2") format("woff2"),
+    url("../fonts/TahomaRegular.woff") format("woff"),
+    url("../fonts/TahomaRegular.ttf") format("truetype"),
+    url("../fonts/TahomaRegular.svg#Tahoma") format("svg");
+}
+
+@font-face {font-family: "TahomaBold";
+    src: url("../fonts/TahomaBold.eot");
+    src: url("../fonts/TahomaBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TahomaBold.woff2") format("woff2"),
+    url("../fonts/TahomaBold.woff") format("woff"),
+    url("../fonts/TahomaBold.ttf") format("truetype"),
+    url("../fonts/TahomaBold.svg#Tahoma") format("svg");
+}
+
+
+
+
+@font-face {
+  font-family: 'play';
+  src: url('../fonts/play.eot?11281399');
+  src: url('../fonts/play.eot?11281399#iefix') format('embedded-opentype'),
+       url('../fonts/play.woff2?11281399') format('woff2'),
+       url('../fonts/play.woff?11281399') format('woff'),
+       url('../fonts/play.ttf?11281399') format('truetype'),
+       url('../fonts/play.svg?11281399#play') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "play";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  
+  font-variant: normal;
+  text-transform: none;
+ 
+
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+
+}
+.icon-lef { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
+.icon-right { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
+ 
+.icon-lef:before { content: '\e803'; } /* '' */
+.icon-right:before { content: '\e804'; } /* '' */
+
+
+$font1: "HelveticaNeue-Light", sans-serif;
+$font-bold1: "HelveticaNeueBold", sans-serif;
+$font2: "TahomaRegular", sans-serif;
+$font-bold2: "TahomaBold", sans-serif;
